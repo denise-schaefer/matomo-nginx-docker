@@ -44,8 +44,8 @@ docker-compose down
    * replace /var/www/matomo/ with the path to your Matomo instance
 3. go to the sites-enabled folder of your nginx config directory
    and enable the Matomo config by creating a symlink: ```sudo ln -s ../sites-available/matomo.conf```
-   test if there is a syntax error in your nginx config: ```sudo nginx -t```
-   restart nginx: ```sudo systemctl restart nginx```
+4. test if there is a syntax error in your nginx config: ```sudo nginx -t```
+5. restart nginx: ```sudo systemctl restart nginx```
    
 ## matomo installation
 
@@ -54,4 +54,9 @@ docker-compose down
 3. Provide the following database connection parameter where password is the one you set in db.env as MYSQL_ROOT_PASSWORD
 
 ![alt matomo installation](matomo_installation.png "matomo installation")
+
+## access maria db
+````
+sudo docker exec -it matomo_db_1 bash
+````
 
