@@ -52,7 +52,7 @@ docker-compose down
    
 ## matomo installation
 
-1. Call matomo installation as defined in frontend web server, e.g. https://stats.example.com
+1. Call matomo installation as defined in frontend web server, e.g. https://stats.example.com/index.php
 2. Walk through installation steps
 3. Provide the following database connection parameter where password is the one you set in db.env as MYSQL_ROOT_PASSWORD
 
