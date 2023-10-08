@@ -8,7 +8,7 @@ services:
     env_file:
       - db.env
   app:
-    image: matomo:3.13.6-fpm
+    image: matomo:4.15.1-fpm
     links:
       - db
     volumes:
