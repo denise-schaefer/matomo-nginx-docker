@@ -33,9 +33,9 @@ static html stuff in the docker image that aren't accessible from an external we
 ## test your installation
 
 ```
-docker-compose up
+docker compose up
 curl 127.0.0.1:8088 # should provide a result
-docker-compose down
+docker compose down
 ```
 
 ## frontend web server with nginx
